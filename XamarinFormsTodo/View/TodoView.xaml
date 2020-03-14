@@ -13,11 +13,12 @@
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
                             <Label Text="{Binding Name}" FontAttributes="Bold" VerticalTextAlignment="Center" FontSize="17" HorizontalOptions="StartAndExpand" />
-                            <Image Source="check.png" HorizontalOptions="End" WidthRequest="50" IsVisible="{Binding Done}" />
+                            <Image Source="check.png" HorizontalOptions="End"
+                                   WidthRequest="50" IsVisible="{Binding Done}" />
                         </StackLayout>
                         <ViewCell.ContextActions>
                             <MenuItem IconImageSource="plus.png" Command="{Binding Path=BindingContext.TodoDone, Source={x:Reference Todoview }}"
-                                      CommandParameter="{Binding Id}" Text="Ekle"></MenuItem>
+                                      CommandParameter="{Binding .}" Text="Ekle"></MenuItem>
                         </ViewCell.ContextActions>
                     </ViewCell>
                 </DataTemplate>
