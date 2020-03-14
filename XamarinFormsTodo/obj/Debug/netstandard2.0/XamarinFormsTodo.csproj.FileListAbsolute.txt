@@ -1,0 +1,14 @@
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\bin\Debug\netstandard2.0\XamarinFormsTodo.deps.json
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\bin\Debug\netstandard2.0\XamarinFormsTodo.dll
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\bin\Debug\netstandard2.0\ref\XamarinFormsTodo.dll
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\bin\Debug\netstandard2.0\XamarinFormsTodo.pdb
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\XamarinFormsTodo.csprojAssemblyReference.cache
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\View\TodoView.xaml.g.cs
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\XamarinFormsTodo.AssemblyInfoInputs.cache
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\XamarinFormsTodo.AssemblyInfo.cs
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\XamarinFormsTodo.dll
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\ref\XamarinFormsTodo.dll
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo\obj\Debug\netstandard2.0\XamarinFormsTodo.pdb

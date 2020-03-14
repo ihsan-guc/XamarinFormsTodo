@@ -1,6 +1,6 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
+using XamarinFormsTodo.View;
+using XamarinFormsTodo.ViewModel;
 
 namespace XamarinFormsTodo
 {
@@ -10,7 +10,7 @@ namespace XamarinFormsTodo
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new TodoView();
         }
 
         protected override void OnStart()
