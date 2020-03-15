@@ -525,3 +525,4 @@ C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTod
 C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo.Android\obj\Debug\90\android\assets\System.Text.Json.dll
 C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo.Android\obj\Debug\90\android\assets\System.Threading.dll
 C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo.Android\obj\Debug\90\android\assets\System.Threading.Tasks.Extensions.dll
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\XamarinFormsTodo.Android\obj\Debug\90\res\drawable\checkdone.png

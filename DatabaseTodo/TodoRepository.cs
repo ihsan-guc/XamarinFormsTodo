@@ -20,10 +20,15 @@ namespace DatabaseTodo
         {
             try
             {
-                var entity = await context.Todo.AddAsync(todo);
-                await context.SaveChangesAsync();
-                var isAdd = entity.State == Microsoft.EntityFrameworkCore.EntityState.Added;
-                return isAdd;
+                if (todo != null)
+                {
+                    var entity = await context.Todo.AddAsync(todo);
+                    await context.SaveChangesAsync();
+                    var isAdd = entity.State == Microsoft.EntityFrameworkCore.EntityState.Added;
+                    return isAdd;
+                }
+                else
+                    return false;
             }
             catch (Exception)
             {
@@ -78,7 +83,6 @@ namespace DatabaseTodo
                 {
                     var entity = context.Todo.Find(todo.Id);
                     entity.Done = true;
-                    entity.Name = entity.Name + " " + context.Todo.Count();
                     await context.SaveChangesAsync();
                     return true;
                 }

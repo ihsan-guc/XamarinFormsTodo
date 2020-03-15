@@ -34,6 +34,7 @@ namespace XamarinFormsTodo.ViewModel
         {
             todoAdd = new Command(AddTodo);
             todoDone = new Command(DoneTodo);
+            todolistclear = new Command(TodoClear);
             TodoRepository = todoRepository;
         }
         public ObservableCollection<Todo> todoList;
@@ -68,10 +69,11 @@ namespace XamarinFormsTodo.ViewModel
         }
         public async void TodoClear()
         {
-            var isOk = await App.Current.MainPage.DisplayAlert("Message", "Item Done :", "Ok","Cancel");
+            var isOk = await App.Current.MainPage.DisplayAlert("Message", "Your list will be deleted.", "Ok","Cancel");
             if (isOk)
             {
-                TodoRepository.TodoListClear();
+                await TodoRepository.TodoListClear();
+                TodoList = TodoRepository.GetTodos();
             }
         }
         public void AddTodo()
@@ -85,6 +87,7 @@ namespace XamarinFormsTodo.ViewModel
             TodoRepository.AddTodo(todo);
             TodoList = TodoRepository.GetTodos();
             App.Current.MainPage.DisplayAlert("Message", "Item Add :" + todo.Name, "Ok");
+            Name = "";
         }
         public async void DoneTodo(object data)
         {
