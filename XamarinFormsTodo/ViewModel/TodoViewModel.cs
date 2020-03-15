@@ -30,23 +30,24 @@ namespace XamarinFormsTodo.ViewModel
             get { return done; }
             set { done = value; OnPropertyChanged(); }
         }
-        public TodoViewModel()
+        public TodoViewModel(ITodoRepository todoRepository)
         {
-            TodoData.Add(new Todo() { Id = 1, Done = true, Name = "Meyve" });
             todoAdd = new Command(AddTodo);
             todoDone = new Command(DoneTodo);
+            TodoRepository = todoRepository;
         }
-        private ObservableCollection<Todo> todoData;
-        public ObservableCollection<Todo> TodoData
+        public ObservableCollection<Todo> todoList;
+        public ObservableCollection<Todo> TodoList
         {
             get
             {
-                if (todoData == null)
-                    return todoData = new ObservableCollection<Todo>();
-                return todoData;
+                if (todoList == null)
+                    todoList = new ObservableCollection<Todo>();
+                return todoList = (TodoRepository.GetTodos());
             }
-            set { todoData = value; }
+            set { todoList = value; OnPropertyChanged(); }
         }
+        public ITodoRepository  TodoRepository { get; set; }
         public ICommand todoAdd;
         public ICommand TodoAdd
         {
@@ -59,24 +60,40 @@ namespace XamarinFormsTodo.ViewModel
             get { return todoDone; }
             set { todoDone = value; OnPropertyChanged(); }
         }
+        public ICommand todolistclear;
+        public ICommand TodoListClear
+        {
+            get { return todolistclear; }
+            set { todolistclear = value; OnPropertyChanged(); }
+        }
+        public async void TodoClear()
+        {
+            var isOk = await App.Current.MainPage.DisplayAlert("Message", "Item Done :", "Ok","Cancel");
+            if (isOk)
+            {
+                TodoRepository.TodoListClear();
+            }
+        }
         public void AddTodo()
         {
             var todo = new Todo
             {
-                Id = todoData.Count + 1,
+                Id = TodoList.Count + 1,
                 Done = Done,
                 Name = name,
             };
-            todoData.Add(todo);
+            TodoRepository.AddTodo(todo);
+            TodoList = TodoRepository.GetTodos();
             App.Current.MainPage.DisplayAlert("Message", "Item Add :" + todo.Name, "Ok");
         }
-        public void DoneTodo(object data)
+        public async void DoneTodo(object data)
         {
             Todo todo = (Todo)data;
             if (todo != null)
             {
                 App.Current.MainPage.DisplayAlert("Message", "Item Done :" + todo.Name, "Ok");
-                todo.Done = true;
+                TodoRepository.UpdateTodo(todo);
+                TodoList = TodoRepository.GetTodos();
             }
         }
     }

@@ -1,0 +1,11 @@
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\bin\Debug\netstandard2.0\DatabaseTodo.deps.json
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\bin\Debug\netstandard2.0\DatabaseTodo.dll
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\obj\Debug\netstandard2.0\DatabaseTodo.AssemblyInfoInputs.cache
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\obj\Debug\netstandard2.0\DatabaseTodo.AssemblyInfo.cs
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\bin\Debug\netstandard2.0\DatabaseTodo.pdb
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\bin\Debug\netstandard2.0\XamarinFormsTodo.dll
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\bin\Debug\netstandard2.0\XamarinFormsTodo.pdb
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\obj\Debug\netstandard2.0\DatabaseTodo.csprojAssemblyReference.cache
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\obj\Debug\netstandard2.0\DatabaseTodo.csproj.CopyComplete
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\obj\Debug\netstandard2.0\DatabaseTodo.dll
+C:\Users\EysanGuc\source\repos\XamarinFormsTodo\XamarinFormsTodo\DatabaseTodo\obj\Debug\netstandard2.0\DatabaseTodo.pdb

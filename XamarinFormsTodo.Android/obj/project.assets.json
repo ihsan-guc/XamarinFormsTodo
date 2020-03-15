@@ -1209,6 +1209,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "DatabaseTodo/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.2",
+          "XamarinFormsTodo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DatabaseTodo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DatabaseTodo.dll": {}
+        }
+      },
       "XamarinFormsTodo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3039,6 +3053,11 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "DatabaseTodo/1.0.0": {
+      "type": "project",
+      "path": "../DatabaseTodo/DatabaseTodo.csproj",
+      "msbuildProject": "../DatabaseTodo/DatabaseTodo.csproj"
+    },
     "XamarinFormsTodo/1.0.0": {
       "type": "project",
       "path": "../XamarinFormsTodo/XamarinFormsTodo.csproj",
@@ -3047,6 +3066,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "DatabaseTodo >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.2",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.4.0.991757",
@@ -3085,6 +3105,9 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
+            "C:\\Users\\EysanGuc\\source\\repos\\XamarinFormsTodo\\XamarinFormsTodo\\DatabaseTodo\\DatabaseTodo.csproj": {
+              "projectPath": "C:\\Users\\EysanGuc\\source\\repos\\XamarinFormsTodo\\XamarinFormsTodo\\DatabaseTodo\\DatabaseTodo.csproj"
+            },
             "C:\\Users\\EysanGuc\\source\\repos\\XamarinFormsTodo\\XamarinFormsTodo\\XamarinFormsTodo\\XamarinFormsTodo.csproj": {
               "projectPath": "C:\\Users\\EysanGuc\\source\\repos\\XamarinFormsTodo\\XamarinFormsTodo\\XamarinFormsTodo\\XamarinFormsTodo.csproj"
             }

@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodel="clr-namespace:XamarinFormsTodo.ViewModel;assembly=XamarinFormsTodo" Title="Todo"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Todo"
              x:Class="XamarinFormsTodo.View.TodoView" x:Name="Todoview">
     <StackLayout Orientation="Vertical" Spacing="20" Padding="20">
         <Entry Text="{Binding Name}" Placeholder="Todo Add" FontAttributes="Bold" FontSize="23"></Entry>
-        <Button Text="Todo Add" TextColor="White" BackgroundColor="Black" FontSize="23" 
+        <StackLayout Spacing="20" Padding="20" Orientation="Horizontal">
+            <Button Text="Todo Add" TextColor="White" BackgroundColor="Black" FontSize="23" 
                 Command="{Binding Path=BindingContext.TodoAdd, Source={x:Reference Todoview}}"></Button>
-        <ListView x:Name="listView" Margin="20" ItemsSource="{Binding TodoData}">
+            <Button Text="Todo List Clear" TextColor="White" BackgroundColor="Black" FontSize="23" 
+                Command="{Binding Path=BindingContext.TodoListClear, Source={x:Reference Todoview}}"></Button>
+        </StackLayout>
+        <ListView x:Name="listView" Margin="20" ItemsSource="{Binding TodoList}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XamarinFormsTodo.Model;
 using XamarinFormsTodo.View;
 using XamarinFormsTodo.ViewModel;
 
@@ -6,11 +7,10 @@ namespace XamarinFormsTodo
 {
     public partial class App : Application
     {
-        public App()
+        public App(ITodoRepository todoRepository)
         {
             InitializeComponent();
-
-            MainPage = new TodoView();
+            MainPage = new TodoView(todoRepository);
         }
 
         protected override void OnStart()
