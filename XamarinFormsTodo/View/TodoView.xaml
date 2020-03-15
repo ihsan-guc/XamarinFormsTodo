@@ -7,7 +7,7 @@
         <StackLayout Spacing="20" Padding="20" Orientation="Horizontal">
             <Button Text="Todo Add" TextColor="White" BackgroundColor="Black" FontSize="23" 
                 Command="{Binding Path=BindingContext.TodoAdd, Source={x:Reference Todoview}}"></Button>
-            <Button Text="Todo List Clear" TextColor="White" BackgroundColor="Black" FontSize="23" 
+            <Button Text="Todo List Clear" TextColor="Black" BackgroundColor="White" FontSize="23" 
                 Command="{Binding Path=BindingContext.TodoListClear, Source={x:Reference Todoview}}"></Button>
         </StackLayout>
         <ListView x:Name="listView" Margin="20" ItemsSource="{Binding TodoList}">
